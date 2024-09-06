@@ -176,13 +176,13 @@ In pen and paper write the inner workings of a BST. How does a BST work? How to 
 <details>
 <summary>
 Thread A and Thread B are running parallely. What will be the output of following code?   
-<img src= "./resource/thread_question_srbd.png">
+<img src= "../resource/thread_question_srbd.png">
 
 </summary>
 <hr>
 
 Unpredictable. It is not guaranteed that which thread is currently accessing the `cnt` variable. Was asked a follow up question on how to solve this issue?
-<img src= "./resource/thread_answer_srbd.png">
+<img src= "../resource/thread_answer_srbd.png">
 
 </details>
 
