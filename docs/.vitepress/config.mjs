@@ -6,7 +6,7 @@ export default defineConfig({
   description: "Crowd sourced collection of interview questions of different BD tech companies",
 
   // description: "Crowd sourced collection of interview questions of different BD tech companies",
-  base: '/interview-questions-bangladesh/',
+  base: '/interview-questions-bangladesh/knowledge/',
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
