@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Start Taking Preparation
-      link: /general
+      link: questions/general
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples

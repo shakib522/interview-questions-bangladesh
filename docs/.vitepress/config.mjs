@@ -12,32 +12,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Questions', link: '/general' }
+      { text: 'Questions', link: '/questions/general', activeMatch:'/questions/' },
+      { text: 'Suggestions', link: '/suggestions/general', activeMatch:'/suggestions/' }
+      
     ],
 
-    sidebar: [
-      {
-        items: [
-          {text: 'General guidelines', link: '/general' },
-          {text: 'Chaldal', link: '/chaldal'},
-          {text: 'DSI', link: '/dsi'},
-          {text: 'IQVIA', link: '/iqvia'},
-          {text: 'Priyo', link: '/priyo'},
-          {text: 'Kite Games Studio', link: '/kite'},
-          {text: 'Relisource', link: '/relisource'},
-          {text: 'Spectrum', link: '/spectrum'},
-          {text: 'SRBD', link: '/srbd'},
-          {text: 'Synesis IT', link: '/synesis'},
-          {text: 'Therap BD', link: '/therap'},
-          {text: 'WSD', link: '/wsd'},
-          ]
-      },{
-        items: [
-          {text: 'CSE competitions', link: '/competitions'},
-        
-        ]
-      }
-    ],
+    sidebar: {
+      '/questions/' : {base:'/questions/', items: sidebarQuestions()},
+      '/suggestions/' : {base:'/suggestions/', items: sidebarSuggestions()},
+      
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/TamimEhsan/interview-questions-bangladesh' }
@@ -66,3 +50,41 @@ export default defineConfig({
     ]
   }
 })
+
+function sidebarQuestions() {
+  return [
+    {
+      items: [
+        {text: 'General guidelines', link: '/general' },
+        {text: 'Chaldal', link: '/chaldal'},
+        {text: 'DSI', link: '/dsi'},
+        {text: 'IQVIA', link: '/iqvia'},
+        {text: 'Priyo', link: '/priyo'},
+        {text: 'Kite Games Studio', link: '/kite'},
+        {text: 'Relisource', link: '/relisource'},
+        {text: 'Spectrum', link: '/spectrum'},
+        {text: 'SRBD', link: '/srbd'},
+        {text: 'Synesis IT', link: '/synesis'},
+        {text: 'Therap BD', link: '/therap'},
+        {text: 'WSD', link: '/wsd'},
+        ]
+    },{
+      items: [
+        {text: 'CSE competitions', link: '/competitions'},
+      
+      ]
+    }
+  ]
+}
+
+function sidebarSuggestions() {
+  return [
+    {
+      items: [
+        { text: 'General guidelines', link: '/general' },
+        ]
+    }
+  ]
+}
+
+
